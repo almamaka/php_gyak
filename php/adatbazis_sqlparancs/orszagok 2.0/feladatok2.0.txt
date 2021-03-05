@@ -1,0 +1,9 @@
+1.Hány ország államformája köztársaság?
+2.Mennyi az országok átlagos népessége?
+3.Mennyi az országok átlagos területe?
+4.Mennyi Afrika népsűrűsége?
+5.Melyik az első három legsűrűbben lakott "országméretű" ország (tehát nem város- vagy törpeállam)? 
+6.Milyen államformák léteznek Európában?
+7.Mennyi az országok területe összesen?
+8.Hány ország lakossága 8 és 12 millió közötti?
+9.Mely fővárosok népesebbek 20 millió főnél?

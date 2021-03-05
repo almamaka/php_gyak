@@ -1,0 +1,10 @@
+1. select nev from ugyfel order by nev
+2. select nev, SzulEv, orsz from ugyfel where orsz like 'H' order by Szulev desc 
+3. select nev, irszam from ugyfel where irszam like '2%' 
+4. select sum(osszeg) as "Összes befizetés" from befiz vagy SELECT nev, SUM(osszeg) FROM befiz INNER JOIN ugyfel ON befiz.azon=ugyfel.azon GROUP BY nev
+5. select avg(osszeg) as "Átlagos befizetés" from befiz
+6. SELECT MIN(osszeg) AS "Legkisebb befizetés", MAX(osszeg) AS "Legnagyobb befizetés" FROM befiz
+7. select count(osszeg) as "Befizetések száma" from befiz
+8. select nev, datum, osszeg from ugyfel inner join befiz on ugyfel.azon=befiz.azon where nev like "Török Bálint" 
+9. select nev, sum(osszeg) as "Összes befizetés" from befiz inner join ugyfel on befiz.azon=ugyfel.azon where nev like "Nagy Károly"
+10. select sum(osszeg) as "Külföldi befizetések összesen" from befiz inner join ugyfel on befiz.azon=ugyfel.azon where orsz not like 'H'  

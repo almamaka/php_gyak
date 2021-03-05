@@ -1,0 +1,41 @@
+Letöltés és teleptés - git-scm.com
+
+Felhasználó beálltásai - beazonosítás céljából:
+$ git config --global user.name 'Szabó Péter'
+$ git config --global user.email 'szabo.p992@gmail.com'
+
+A készülő projekt gyökérkönyvtárában inicializáljuk a projektet:
+$ git init
+
+Git repository státuszának ellenőrzése
+$ git status
+
+Hozzáadás a gyűjteményhez
+$ git add 'index.html' - file név alapján
+$ git add *.txt - kiterjesztés alapján
+$ git add . - mindent hozzáad
+
+Egyszerűbb ha minden támogatott filet hozzáadunk az fenti módszerrel, viszont csinálnunk kell egy listát a nem támogatott fileokról
+.gitignore
+
+Verziók rögzítése
+$ git commit
+Felugrik egy szövegszerkesztő, hogy tudjunk üzenetet is párosítani a verziónál történt változásokhoz
+i - szerkesztés megkezdése, majd esc
+:wq - mentés és kilépés
+
+
+Github.com
+
+Jelenlegi projektünk lokális projekt vagyis csak a saját gépünkről érhertjük el
+Githubon hozzunk létre egy új repot
+
+$ git remote add origin https://github.com/szabopeter92/verziokezeles.git
+$ git push -u origin master
+
+
+Különböző working ágakat -brancheket tudunk létrehozni
+$ git branch style- style ág létrehozása
+$ git checkout style - style ág használata
+
+Szövegszerkesztő nélküli commitolás $ git commit -m 'üzenet'

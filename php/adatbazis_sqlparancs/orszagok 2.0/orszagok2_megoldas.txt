@@ -1,0 +1,9 @@
+1. SELECT COUNT(orszag) AS "Köztársaságok Száma" FROM orszagok WHERE allamforma LIKE "köztársaság"
+2. SELECT AVG(`nepesseg`) AS "országok átlagos népessége" FROM orszagok
+3. SELECT AVG(`terulet`) AS "országok átlagos területe" FROM orszagok
+4. SELECT SUM(nepesseg*1000) / SUM(terulet) AS "Afrika népsűrűsége" FROM orszagok WHERE `foldr_hely` LIKE "%Afrika%"
+5. SELECT orszag, nepesseg*1000/terulet AS "népsűrűség" FROM orszagok WHERE foldr_hely NOT LIKE "%törpeállam%" AND foldr_hely NOT LIKE "%városállam%" ORDER BY nepesseg*1000/`terulet` DESC LIMIT 3
+6. SELECT DISTINCT(`allamforma`) FROM orszagok WHERE foldr_hely LIKE "%Európa%"
+7. SELECT SUM(`terulet`) AS "Országok területe összesen" FROM orszagok
+8. SELECT COUNT(orszag) FROM orszagok WHERE nepesseg*1000 > 8000000 AND nepesseg*1000< 12000000
+9.SELECT fovaros FROM orszagok WHERE `nep_fovaros`*1000 > 20000000

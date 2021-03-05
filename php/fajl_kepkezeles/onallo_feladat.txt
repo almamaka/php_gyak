@@ -1,0 +1,12 @@
+index.php:
+
+Form 2 input mezővel -> phpval le ellenőrzitek, hogy üresek-e a mezők, ha üresek megjelenítitek a hibát, ha ki vannak töltve átugorhatunk a következő oldalra (feladat.php)
+
+feladat.php:
+
+Lesz egy form, amiből filet fogtok feltölteni
+PHP-val le ellenőrzitek, hogy az adott file kép formátumú-e
+Kisebb-e a kép mint 2MB
+Ha ezeknek a feltételeknek megfeleltünk, akkor megtörténhet a feltöltés
+Feltöltés közben viszont méretezni is kell a képet (általalok választott méretek)
+Mappába feltölteni csak a módosított mérettel rendelkező képet kell.

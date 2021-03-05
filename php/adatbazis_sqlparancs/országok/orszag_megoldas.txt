@@ -1,0 +1,11 @@
+1. SELECT `fovaros` FROM orszagok WHERE orszag="Madagaszkár"
+2. SELECT `orszag` FROM orszagok WHERE `fovaros`="OUAGADOUGOU"
+3. SELECT `orszag` FROM orszagok WHERE `autojel`="TT"
+4. SELECT `orszag` FROM orszagok WHERE `penzjel`="SGD"
+5. SELECT `orszag` FROM orszagok WHERE `telefon`="61"
+6. SELECT `terulet` FROM orszagok WHERE `orszag`="Monaco"
+7. SELECT `nepesseg`*1000 AS "Málta népessége" FROM orszagok WHERE `orszag`="Málta"
+8. SELECT nepesseg*1000/terulet AS "Japán népsűrűsége" FROM orszagok WHERE orszag="Japán"
+9. SELECT COUNT(`orszag`) FROM orszagok WHERE `terulet`<100
+10. SELECT COUNT(`orszag`) FROM orszagok WHERE `terulet`> 1000000
+11. SELECT COUNT(`orszag`) FROM orszagok WHERE nepesseg*1000 < 20000

@@ -1,0 +1,10 @@
+1. select nev, sum(osszeg) as osszeg from befiz inner join ugyfel on befiz.azon=ugyfel.azon group by nev
+2. select nev, sum(osszeg) as osszeg from befiz inner join ugyfel on befiz.azon=ugyfel.azon group by nev order by SUM(osszeg) desc limit 3 
+3. select monthname(datum) as honap, sum(osszeg) as osszeg from befiz group by honap order by datum
+4. select datum as Dátum, count(date_format(datum,'%d')) as Befizétesek_száma from befiz group by date_format(datum,'%m'), date_format(datum,'%d') having count(date_format(datum,'%d'))>1 
+5. SELECT `azon`,`datum` FROM `befiz` WHERE datediff(NOW(), `datum`) > 365
+6. SELECT SUM(`osszeg`) FROM befiz WHERE datediff(NOW(), `datum`) > 365
+7.select nev, min(szulev) as Születési_év from befiz inner join ugyfel on befiz.azon=ugyfel.azon 
+9. select nev, min(osszeg) from befiz inner join ugyfel on befiz.azon=ugyfel.azon 
+10. select nev as Név, sum(osszeg) as Befizetések from befiz inner join ugyfel on befiz.azon=ugyfel.azon group by nev having Befizetések>(select avg(osszeg) from befiz)
+11. SELECT nev,SUM(osszeg) FROM ugyfel RIGHT JOIN befiz ON befiz.azon=ugyfel.azon GROUP BY nev HAVING SUM(osszeg) IS null

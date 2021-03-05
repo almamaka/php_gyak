@@ -1,0 +1,52 @@
+body{
+
+    background: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#doboz{
+
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+
+#termekkep{
+
+    width: 300px;
+    margin: 10px auto;
+}
+
+#termekkep img{
+
+    width: 300px;
+}
+
+#doboz button{
+
+    padding: 10px 25px;
+    background: rgb(3,166,231);
+    color: #fff;
+    border: 1px solid rgb(3,166,231);
+    border-radius: 5px;
+}
+
+/*
+#doboz:hover{
+
+    cursor: pointer;
+    box-shadow: 2px 2px 30px rgb(218,218,218);
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}
+*/
+
+img:hover{
+
+    transform: scale(1.02);
+    transition: all 0.2s ease;
+}
